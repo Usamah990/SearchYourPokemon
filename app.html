@@ -26,7 +26,7 @@
         text-align: center;
         overflow: auto;
       }
-      main{
+      main {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -52,30 +52,35 @@
         margin-top: 0.4rem;
         border-radius: 999px;
       }
+      button:hover{
+        background-color: gray;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+      }
       img {
         box-shadow: 0 5px 10px red;
       }
-      div{
+      div {
         margin-top: 3rem;
       }
-      header img{
+      header img {
         width: 250px;
         box-shadow: none;
         margin-bottom: 1.8rem;
       }
+      
     </style>
   </head>
   <body>
-    
     <main>
       <div class="container">
         <header>
-          <img src="./assets/pokemon-logo.png" alt="Pokemon Logo">
+          <img src="./assets/pokemon-logo.png" alt="Pokemon Logo" />
         </header>
         <!-- Search for pokemon  -->
         <input type="text" placeholder="Type the pokemon name..." />
         <button onclick="fetchData()">SEARCH</button>
-        <h3 style="display: none;">Id too large or the name is wrong!</h3>
+        <h3 style="display: none">Id too large or the name is wrong!</h3>
         <div>
           <img
             src=""
@@ -89,6 +94,7 @@
         </div>
       </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
